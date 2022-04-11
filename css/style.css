@@ -8,18 +8,30 @@
 
 :root {
   --border-color: #e3e5e4;
-  --bg-color: #c3c7ca;
+  --bg-color: #b4deff;
   --text-color: #34444f;
 }
 
 body {
   background: #fff;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
-  font-family: "Lato", sans-serif;
+
+  padding: 1rem;
+}
+
+.title {
+  margin-top: 1.5rem;
+}
+
+.description {
+  margin: 1rem 0 1.5rem;
 }
 
 .draggable-list {
@@ -78,6 +90,7 @@ body {
   color: var(--text-color);
   font-size: 16px;
   padding: 10px 20px;
+  margin: 1rem 0;
   cursor: pointer;
   border: none;
 }
